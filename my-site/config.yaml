@@ -111,12 +111,12 @@ params:
     title: "About Me"
     #image: "/images/me.png"
     content: |-
-      
 
-      I am interested in distributed systems, quantitative finance, and machine learning.
+      I am interested in distributed systems, quantitative finance, and machine learning. I have professional experience working with large microservices systems, database optimization, cloud integration, and machine learning. Feel free to reach out!
+
+      These are the languages and technologies that I've utilized in my past internships and projects:
     skills:
       enable: true
-      title: "Here are a few languages and technologies that I've utilized in my past internships and projects:"
       items:
         - "C/C++"
         - "C#"
@@ -143,6 +143,7 @@ params:
       - job: "Software Engineering Intern"
         company: "Dapper Labs"
         companyUrl: "https://www.dapperlabs.com"
+        location: "Vancouver, BC"
         date: "May 2022 - Aug 2022"
         content: |
           NFL All Day and NBA Top Shot Backend Teams
@@ -155,20 +156,15 @@ params:
       - job: "Software Engineering Intern"
         company: "Plenty of Fish"
         companyUrl: "https://www.pof.com"
-        date: "Jan 2022 - Apr 2022"
+        location: "Vancouver, BC"
+        date: "May 2021 - Aug 2021"
+        date2: "Jan 2022 - Apr 2022"
+        date2Enable: true
         content: |
           Platform and Payments Team
 
           - Co-led development and design of a new automated pricing engine using C#, Kafka, Redis, and SQL that reduced the legacy model's latency and DB load by 99.99%
           - Developed new discounting features for the payment flow to support product initiatives and A/B testing
-
-      - job: "Software Engineering Intern"
-        company: "Plenty of Fish"
-        companyUrl: "https://www.pof.com"
-        date: "May 2021 - Aug 2021"
-        content: |
-          Payments Team
-
           - Headed the migration of the entire payments system to a new CRM platform using C#, Python, and Kafka
           - Implemented an on-call pager system to alert developers of critical errors using Terraform, Azure, and Python
           - Designed internal libraries for deploying Kubernetes jobs using Kubernetes, Docker, and Bash
@@ -176,6 +172,7 @@ params:
       - job: "Software Developer Intern"
         company: "Bell and Howell"
         companyUrl: "http://bellandhowell.com"
+        location: "Ontario, ON"
         date: "Sep 2020 - Dec 2020"
         content: |
           ARK Division
@@ -188,6 +185,7 @@ params:
       - job: "Junior Software Engineering Intern"
         company: "Health Canada"
         companyUrl: "https://www.canada.ca/en/health-canada.html"
+        location: "Ottawa, ON"
         date: "Jan 2020 - Apr 2020"
         content: |
           BRDD Division
@@ -199,6 +197,7 @@ params:
       - job: "Research and Validation Intern"
         company: "Photon Design"
         companyUrl: "https://www.photond.com/"
+        location: "Oxford, UK"
         date: "Jul 2018 - Aug 2018"
         content: |
           Simulation and Validation Team
@@ -218,15 +217,20 @@ params:
           name: "University of Waterloo"
           url: "https://uwaterloo.ca"
         date: "2019 - Present"
-        content: |-
-          Courses
-            - Numerical Methods: 100%
-            - Algorithms and Data Structures: 100%
-            - Systems Programming and Concurrency: 97%
-            - Digital Computers: 94%
-            - Probability Theory and Statistics 1: 90%
-            - Embedded Microprocessor Systems: 95%
-            - Discrete Mathematics and Logic 1: 91%
+        content: |
+          Awards
+            - 3x Engineering Dean's List
+            - President's Scholarship of Distinction
+            - B.P. Dammizio Entrance Scholarship
+          
+          Relevant Courses
+            - ECE 204 Numerical Methods - 100%
+            - ECE 250 Algorithms and Data Structures - 100%
+            - ECE 252 Systems Programming and Concurrency - 97%
+            - ECE 222 Digital Computers - 94%
+            - ECE 203 Probability Theory and Statistics 1 - 90%
+            - ECE 224 Embedded Microprocessor Systems - 95%
+            - ECE 108 Discrete Mathematics and Logic 1 - 91%
       - title: "High School"
         school:
           name: "Templeton Secondary School"
