@@ -1,3 +1,324 @@
-baseURL: http://example.org/
-languageCode: en-us
-title: My New Hugo Site
+baseURL: "https://kyle-lee.netlify.app"
+languageCode: "en-us"
+title: "Kyle Lee"
+theme: hugo-profile
+
+Paginate: 3
+disqusShortname: k297lee
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Kyle Lee"
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/favicon.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    disableThemeToggle: false
+    # defaultTheme: "light" # dark
+
+  # font:
+  #   fontSize: 1.5rem # default: 1rem
+  #   fontWeight: 500 # default: 400
+  #   lineHeight: 1 # default: 1.5
+  #   textAlign: right # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  # navbar:
+  #   align: mx-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+  #   brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+  #   brandName: "Profile" # Brand name for the brand | default is the title variable
+
+  #   menus:
+  #     disableAbout: true
+  #     disableExperience: true
+  #     disableEducation: true
+  #     disableProjects: true
+  #     disableAchievements: true
+  #     disableContact: true
+
+  # Hero
+  hero:
+    enable: true
+    title: "Hey, I'm Kyle!"
+    content: "I'm an upcoming senior studying Computer Engineering at the University of Waterloo seeking Summer 2023 SWE/ML internships."
+    image: /images/photo.jpg
+    button:
+      enable: true
+      name: "Resume"
+      url: "/resume.pdf"
+      download: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/k297lee
+        - icon: fa fa-envelope
+          url: mailto:k297lee@uwaterloo.ca
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/kyle-yuan-yang-lee
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    #image: "/images/me.png"
+    content: |-
+      
+
+      I am interested in distributed systems, quantitative finance, and machine learning.
+    skills:
+      enable: true
+      title: "Here are a few languages and technologies that I've utilized in my past internships and projects:"
+      items:
+        - "C/C++"
+        - "C#"
+        - "Golang"
+        - "Python"
+        - "Kafka"
+        - "Redis"
+        - "AWS EC2"
+        - "Docker"
+        - "Kubernetes"
+        - "GCP BigQuery"
+        - "Sklearn"
+        - "SQL"
+        - "PostgreSQL"
+        - "HTML/CSS"
+        - "Git"
+        - "Azure"
+
+  # Experience
+  experience:
+    enable: true
+    title: "Work Experience"
+    items:
+      - job: "Software Engineering Intern"
+        company: "Dapper Labs"
+        companyUrl: "https://www.dapperlabs.com"
+        date: "May 2022 - Aug 2022"
+        content: |
+          NFL All Day and NBA Top Shot Backend Teams
+
+          - Led the development of a recommender system for the NBATS search page
+          - Utilized collaborative filtering, content-based filtering, and logistic regression to build out the recommendations, leveraging Python with Sklearn, GCP BigQuery, Golang, and Kafka
+          - Developed features in NFT backend processing services with Golang, PostgreSQL, and GraphQL
+          - Designed smart contracts using Flow blockchain and Cadence to validate and process transactions
+
+      - job: "Software Engineering Intern"
+        company: "Plenty of Fish"
+        companyUrl: "https://www.pof.com"
+        date: "Jan 2022 - Apr 2022"
+        content: |
+          Platform and Payments Team
+
+          - Co-led development and design of a new automated pricing engine using C#, Kafka, Redis, and SQL that reduced the legacy model's latency and DB load by 99.99%
+          - Developed new discounting features for the payment flow to support product initiatives and A/B testing
+
+      - job: "Software Engineering Intern"
+        company: "Plenty of Fish"
+        companyUrl: "https://www.pof.com"
+        date: "May 2021 - Aug 2021"
+        content: |
+          Payments Team
+
+          - Headed the migration of the entire payments system to a new CRM platform using C#, Python, and Kafka
+          - Implemented an on-call pager system to alert developers of critical errors using Terraform, Azure, and Python
+          - Designed internal libraries for deploying Kubernetes jobs using Kubernetes, Docker, and Bash
+
+      - job: "Software Developer Intern"
+        company: "Bell and Howell"
+        companyUrl: "http://bellandhowell.com"
+        date: "Sep 2020 - Dec 2020"
+        content: |
+          ARK Division
+
+          - Worked on redesigning an automated warehouse algorithm with C++ and C# to work in a small scale kiosk machine designed to serve pharmaceutical products to the public
+          - Refactored and optimized authentication logic to reduce runtimes by 25%
+          - Utilized OpenCV to recognize barcodes for product locating and authentication
+          - Led the frontend design and API integration of all pages into the application using C# and XAML
+
+      - job: "Junior Software Engineering Intern"
+        company: "Health Canada"
+        companyUrl: "https://www.canada.ca/en/health-canada.html"
+        date: "Jan 2020 - Apr 2020"
+        content: |
+          BRDD Division
+
+          - Developed scalable WPF applications using C#, XAML, and VBA for streamlining Canada's drug approval process
+          - Designed a process to automate queries to a PostgreSQL database using Entity Framework 7
+          - Automated 90% of daily API, Web, and Windows test suites using C# and Python
+      
+      - job: "Research and Validation Intern"
+        company: "Photon Design"
+        companyUrl: "https://www.photond.com/"
+        date: "Jul 2018 - Aug 2018"
+        content: |
+          Simulation and Validation Team
+
+          - Conducted research focused on the effects of parasitic light reflections in various mediums and geometries using the company's photonics simulation software, MATLAB, and Python
+          - Wrote an article focused on presenting a new design of a multimode interference coupler (MIC), tested and optimized using the company's modelling and optimization software
+          - Extended unit test coverage on new software builds using Python
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    # index: true
+    items:
+      - title: "Bachelor of Applied Sciences, Computer Engineering"
+        school:
+          name: "University of Waterloo"
+          url: "https://uwaterloo.ca"
+        date: "2019 - Present"
+        content: |-
+          Courses
+            - Numerical Methods: 100%
+            - Algorithms and Data Structures: 100%
+            - Systems Programming and Concurrency: 97%
+            - Digital Computers: 94%
+            - Probability Theory and Statistics 1: 90%
+            - Embedded Microprocessor Systems: 95%
+            - Discrete Mathematics and Logic 1: 91%
+      - title: "High School"
+        school:
+          name: "Templeton Secondary School"
+          url: "https://www.vsb.bc.ca/schools/templeton/Pages/default.aspx"
+        date: "2016 - 2019"
+        content: |
+          Class of 2019 Top Scholar
+
+  # Achievements
+  achievements:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: Google kickstart runner
+        content: I solved all problems with optimal solution.
+        url: https://example.com
+      - title: Facebook Hackathon Winner
+        content: Developed a product using Artificial Intelligence.
+      - title: Hugo Profile
+        content: Developed a theme and getting 1K+ downloads per month.
+        url: "https://github.com/gurusabarish/hugo-profile"
+      - title: Microsoft Imagine Runner
+        content: We are developed a product which can help others.
+      - title: Google Summer of Code
+        content: Contributed to a open source project.
+        url: https://example.com
+
+  # projects
+  projects:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: Hugo Profile
+        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+        image: /images/projects/profile.png
+        featured:
+          name: Demo
+          link: https://hugo-profile.netlify.app
+        # badges:
+        #   - "Hugo"
+        #   - "Bootstrap"
+        #   - "Javascript"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/hugo-profile
+          - icon: fab fa-twitter
+            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+      - title: Image Converter
+        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+        image: /images/projects/converter.jpg
+        featured:
+          name: Demo
+          link: https://django-converter.herokuapp.com
+        # badges:
+        #   - "Django"
+        #   - "Bootstrap"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/converter
+
+      - title: Hugo Profile V2
+        content: A clean and simple Hugo template for personal portfolio and blog.
+        image: /images/projects/profile2.jpg
+        featured:
+          name: Demo V2
+          link: https://hugo-profile-2.netlify.app
+        # badges:
+        #   - "Hugo"
+        #   - "Bootstrap"
+        #   - "Javascript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/HugoProfileV2
+
+  #Contact
+  contact:
+    enable: true
+    #title: "Custom name"
+    content: I'm always happy to meet new people. Feel free to reach out via email or LinkedIn!
+    email: k297lee@uwaterloo.ca
+    btnName: Email
+
+  footer:
+    # recentPosts: false
+    socialNetworks:
+      github: https://github.com/k297lee
+      linkedin: https://www.linkedin.com/in/kyle-yuan-yang-lee
