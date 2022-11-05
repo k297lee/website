@@ -32,7 +32,7 @@ Menus:
     #   weight: 2
 
 params:
-  title: "Kyle Lee"
+  title: "Kyle Yuan Yang Lee"
   # staticPath: ""  # The path to serve the static files from
   favicon: "/favicon.png"
 
